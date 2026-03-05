@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Patient List</h2>
+
+<ul>
+{% for p in patients %}
+
+<li>
+{{p.name}} - {{p.age}} - {{p.disease}} - {{p.doctor}}
+</li>
+
+{% endfor %}
+</ul>
+
+<a href="/">Home</a>
+
+</body>
+</html>
